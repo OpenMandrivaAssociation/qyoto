@@ -7,7 +7,6 @@ Group:         Development/KDE and Qt
 License:       GPL
 URL:           https://projects.kde.org/projects/kde/kdebindings/csharp/qyoto
 Source:        ftp://ftp.kde.org/pub/kde/stable/%version/src/%name-%version.tar.bz2
-Patch0:        qyoto-4.6.90-link.patch
 BuildRequires: kdelibs4-devel >= 2:%version
 BuildRequires: smokegen-devel >= 1:%version
 BuildRequires: smokeqt-devel >= 1:%version
@@ -90,7 +89,6 @@ qyoto devel files.
 
 %prep
 %setup -q
-%patch0 -p0
 
 %build
 %cmake_kde4
