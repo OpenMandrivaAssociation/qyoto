@@ -1,7 +1,7 @@
 Name:          qyoto
 Summary:       C# Mono Qt 4 bindings
 Version: 4.8.2
-Release: 1
+Release: 2
 Epoch:         1
 Group:         Development/KDE and Qt
 License:       GPL
