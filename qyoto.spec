@@ -1,6 +1,6 @@
 Name:		qyoto
 Summary:	C# Mono Qt 4 bindings
-Version:	4.9.4
+Version:	4.10.0
 Release:	1
 Epoch:		1
 Group:		Development/KDE and Qt
@@ -97,6 +97,9 @@ qyoto devel files.
 %makeinstall_std -C build
 
 %changelog
+* Thu Feb 07 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.0-1
+- New version 4.10.0
+
 * Wed Dec 05 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.9.4-1
 - New version 4.9.4
 
