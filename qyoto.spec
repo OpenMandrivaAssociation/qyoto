@@ -1,3 +1,7 @@
+# if you want to build this packge for ARM
+# use REAL hardware
+# abf - external nodes - all
+
 Name:		qyoto
 Summary:	C# Mono Qt 4 bindings
 Version:	4.12.3
@@ -6,7 +10,7 @@ Epoch:		1
 Group:		Development/KDE and Qt
 License:	GPL
 URL:		https://projects.kde.org/projects/kde/kdebindings/csharp/qyoto
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel >= 2:%{version}
 BuildRequires:	smokegen-devel >= 1:%{version}
 BuildRequires:	smokeqt-devel >= 1:%{version}
