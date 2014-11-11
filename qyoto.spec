@@ -4,8 +4,8 @@
 
 Summary:	C# Mono Qt 4 bindings
 Name:		qyoto
-Version:	4.14.2
-Release:	2
+Version:	4.14.3
+Release:	1
 Epoch:		1
 License:	GPL+
 Group:		Development/KDE and Qt
@@ -101,6 +101,9 @@ qyoto devel files.
 %makeinstall_std -C build
 
 %changelog
+* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.14.3-1
+- New version 4.14.3
+
 * Mon Oct 27 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.14.2-2
 - Use pkgconfig(qimageblitz) < 5.0.0 to force Qt4 version
 
