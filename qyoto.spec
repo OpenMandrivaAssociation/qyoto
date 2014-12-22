@@ -2,23 +2,23 @@
 # use REAL hardware
 # abf - external nodes - all
 
-Name:		qyoto
 Summary:	C# Mono Qt 4 bindings
-Version:	4.13.3
-Release:	1
+Name:		qyoto
+Version:	4.14.3
+Release:	2
 Epoch:		1
+License:	GPL+
 Group:		Development/KDE and Qt
-License:	GPL
-URL:		https://projects.kde.org/projects/kde/kdebindings/csharp/qyoto
+Url:		https://projects.kde.org/projects/kde/kdebindings/csharp/qyoto
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+BuildRequires:	cmake
+BuildRequires:	kde4-macros
 BuildRequires:	kdelibs4-devel >= 2:%{version}
 BuildRequires:	smokegen-devel >= 1:%{version}
 BuildRequires:	smokeqt-devel >= 1:%{version}
 BuildRequires:	pkgconfig(mono)
 BuildRequires:	pkgconfig(phonon)
-BuildRequires:	pkgconfig(qimageblitz)
-BuildRequires:	kde4-macros
-BuildRequires:	cmake
+BuildRequires:	pkgconfig(qimageblitz) < 5.0.0
 BuildRequires:	qscintilla-qt4-devel
 Provides:	mono-qt4 = %{EVRD}
 
@@ -101,6 +101,18 @@ qyoto devel files.
 %makeinstall_std -C build
 
 %changelog
+* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.14.3-1
+- New version 4.14.3
+
+* Mon Oct 27 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.14.2-2
+- Use pkgconfig(qimageblitz) < 5.0.0 to force Qt4 version
+
+* Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.14.2-1
+- New version 4.14.2
+
+* Mon Sep 29 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.14.1-1
+- New version 4.14.1
+
 * Tue Jul 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.13.3-1
 - New version 4.13.3
 
